@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="projectBtn">
+            <a href = "/insert">Add Project</a>
+        </div>
+        
+        <div class="parent">
+            <div class="top">
+                <div class="heading">
+                    <h1 class="heading">Abdul Rehman Khan</h1>
+                    <p><a href="mailto:abdul77789@gmail.com">abdul77789@gmail.com | </a><a href="tel:7068412534">7068412534</a></p>
+                </div>
+                <div class="date">
+                    <span class="hour"></span>
+                    <span class="min"></span>
+                    <span class="sec"></span>
+                    <span class="am" ></span>
+                </div>
+               
+                <div class="img">
+                    <img src="dp.jpg" alt="">
+                </div>
+            </div>
+
+            <section class="inner">
+                <section class="leftSide">
+                    <section class="education gap">
+                        <h1 class="gapp">EDUCATION</h1>
+                        <strong> Aligarh Muslim University, Aligarh </strong>
+                        <p> Master’s in Chemistry <br>
+                            2021 - 2023 <br>
+                            St. Paul’s Inter College
+                            Higher Secondary Education
+                            2017
+                            Nave technical Institute
+                            Secondary Education
+                            2015</p>
+                    </section>
+                    <section class="skills gap">
+                        <h1 class="gapp">SKILLS</h1>
+                        <strong> PROGRAMMING </strong>
+                        <p> <p>Languages:</p>
+                            Java • JavaScript
+                            <p>Tools:</p>
+                            Git • Postman
+                            <p>Framework & Library:</p>
+                            Express.js • Mongoose • React
+                            <p>Technologies:</p>
+                            HTML • CSS • Node.js
+                            <p>Miscellaneous:</p>
+                            EJS Templating • MongoDB</p>
+                    </section>
+                    <section class="link gap">
+                        <h1 class="gapp">LINKS</h1>
+                        <strong> LinkedIn </strong> <a class="links"
+                            href="https://leetcode.com/abdul0398/" target="_blank"> Abdul Rehman
+                            Khan</a> <br>
+                        <strong> Github </strong> <a class="links"
+                            href="https://github.com/abdul0398" target="_blank"> abdul77789</a>
+                        <br>
+                        <strong> Leetcode </strong> <a class="links"
+                            href="https://leetcode.com/abdul0398/" target="_blank"> abdul77789</a>
+                        <br>
+                        <strong> HackerRank </strong> <a class="links"
+                            href="http://hackerrank.com/abdul77789" target="_blank"> Abdul
+                            rehman Khan</a> <br>
+                    </section>
+                    <section class="courseWork gap">
+                        <h1 class="gapp">COURSEWORK</h1>
+                        Data Structure and Algorithm <br>
+                        Object Oriented Programming
+
+                    </section>
+                </section>
+                <section class="projects">
+                    <h1 class="gapp"> Projects</h1>
+                    <section class="chatApp gap">
+                        <p>CHAT-APP <a href="https://chatapp-dntd.onrender.com" target="_blank"><i>Link</i></a></p> 
+                        <i>Node.js | Express.js | Socket.io | Ejs | HTML | CSS</i>
+                        <ul class="info">
+                            <li>A web application that allows users to chat Real
+                                time</li>
+                            <li>Used concept of Web sockets using npm package
+                                Socket.io</li>
+                            <li>Users can create different rooms and chat
+                                implemented using rooms in socket.io</li>
+                        </ul>
+                    </section>
+                    <section class="shoppingApp gap">
+                        <p>SHOPPING-APP <a href="https://shop-5vf6.onrender.com/products" target="_blank"><i>Link</i></a></p>
+                        <i>Node.js | Express.js | MongoDB | EJS | HTML | CSS</i>
+                        <ul class="info">
+                            <li>A Full Stack Ecommerce App with Razorpay
+                                Integration</li>
+                            <li>Different seller and buyer account using
+                                passport.js</li>
+                            <li>You can add, delete, and edit products, as well
+                                as add reviews and create a wishlist for
+                                products.</li>
+                        </ul>
+
+                    </section>
+                    <section class="Drum gap">
+                        <p>DRUM-KIT <a href="https://abdul0398.github.io/Drum-kit/" target="_blank"><i>Link</i></a></p>
+                        <i>Html, CSS, Javascript.</i>
+                        <ul class="info">
+                            <li>A web application that allows users to play the
+                                drum.</li>
+                            <li>Using DOM manipulation drum can be accessed
+                                using the keyboard as well as the mouse</li>
+                        </ul>
+
+                    </section>
+                    <%for(let i  = 0; i < projects.length; i++){%>
+                        <section class="Drum gap">
+                            <p><%=projects[i].name%><a href="https://abdul0398.github.io/Drum-kit/" target="_blank"><i>Link</i></a></p>
+                            <p>
+                                <%=projects[i].desc%>
+                            </p>
+    
+                        </section>
+                    <%}%>
+
+                </section>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+            
+</html>

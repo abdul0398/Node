@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+.parent {
+    width: 700px;
+    border: 1px solid black;
+    margin: auto;
+    height: max-content;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 23px -6px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 4px 4px 23px -6px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 4px 4px 23px -6px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    line-height: 1.6;
+}
+.heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.leftSide{
+    width: 45%;
+    padding: 10px;
+}
+.projects{
+    width: 45%;
+}
+.info{
+    padding: 0px;
+    margin: 0px;
+}
+.links{
+    text-decoration: none;
+    font-style: italic;
+}
+.gap{
+    margin-top: 25px;
+}
+.gapp{
+    margin-bottom: 5px
+}
+.top{
+    display: flex;
+}
+.img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: auto;
+}
+.img{
+    width: fit-content;
+    margin-left: auto;
+}
+.heading p a {
+    text-decoration: none;
+    color: black;
+}
+.heading a{
+    text-decoration: none;
+    color: black;
+}
+.date{
+    margin-left: 40px;
+    border: 1px solid black;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+}
+.projectBtn{
+    text-align: center;
+    padding: 20px;
+}
+.projectBtn a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
